@@ -51,7 +51,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/empty_space"
+        android:id="@+id/devices"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
@@ -62,7 +62,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select the Color of your iphone: "
+        android:text="Select the Color of your iPhone: "
         android:textSize="20sp"
         android:textStyle="bold"
         />
@@ -121,6 +121,7 @@
             />
 
         <TextView
+            android:id="@+id/quantityTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
@@ -133,6 +134,19 @@
             android:layout_height="wrap_content"
             android:text="+"
             />
+
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Price BDT: 0"
+            android:background="#A68B3B"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            />
+
     </LinearLayout>
 
     <LinearLayout
@@ -141,9 +155,10 @@
         android:orientation="horizontal"
         >
         <Button
+            android:id="@+id/submitOrder"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:text="Submit Button"
+            android:text="Submit Order"
             android:layout_marginRight="20dp"
             />
 

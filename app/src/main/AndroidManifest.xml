@@ -13,6 +13,15 @@
         android:theme="@style/Theme.Mizan04"
         tools:targetApi="31">
         <activity
+            android:name=".AssignmentFrontPage"
+            android:exported="false" />
+        <activity
+            android:name=".rounded_button"
+            android:exported="false" />
+        <activity
+            android:name=".checkBoxRadioButton3"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity2"
             android:exported="false" />
         <activity
