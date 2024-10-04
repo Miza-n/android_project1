@@ -3,6 +3,7 @@ package com.example.mizan04;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
+import android.content.Intent;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -31,7 +32,7 @@ public class checkBoxRadioButton3 extends AppCompatActivity {
 
     private RadioGroup radioGroup;
     private RadioButton radioButton;
-    private Button increment, decrement, submitOrder;
+    private Button increment, decrement, submitOrder, rateUs;
     private int quantity=0;
     private int price = 0;
     private TextView quantityTextView, priceTextView, devices;
@@ -66,6 +67,7 @@ public class checkBoxRadioButton3 extends AppCompatActivity {
         priceTextView = findViewById(R.id.priceTextView);
 
         submitOrder = findViewById(R.id.submitOrder);
+        rateUs = findViewById(R.id.rateUs);
         builder = new AlertDialog.Builder(this);
 
         iPhone15.setOnCheckedChangeListener((buttonView, isChecked) -> {
@@ -133,12 +135,18 @@ public class checkBoxRadioButton3 extends AppCompatActivity {
                                     iPhone13.setChecked(false);
                                     iPhone12.setChecked(false);
                                     radioGroup.clearCheck();
+
                                 }
                             }).show();
                 }
             } catch (Exception e){
                 Toast.makeText(this, "Please select T-shirt color", Toast.LENGTH_SHORT).show();
             }
+        });
+
+        rateUs.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), Rating.class);
+            startActivity(intent);
         });
     }
 

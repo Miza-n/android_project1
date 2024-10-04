@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="15dp"
     tools:context=".checkBoxRadioButton3">
 
     <LinearLayout
@@ -91,7 +92,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
-            android:text="White"/>
+            android:text="Blue"/>
 
     </RadioGroup>
 
@@ -141,7 +142,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:text="Price BDT: 0"
-            android:background="#A68B3B"
             android:textStyle="bold"
             android:textSize="18sp"
             android:textAllCaps="true"
@@ -156,14 +156,15 @@
         >
         <Button
             android:id="@+id/submitOrder"
-            android:layout_width="170dp"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:text="Submit Order"
             android:layout_marginRight="20dp"
             />
 
         <Button
-            android:layout_width="170dp"
+            android:id="@+id/rateUs"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:text="Rate us"
             />
