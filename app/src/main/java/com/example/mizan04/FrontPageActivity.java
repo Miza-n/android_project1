@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class FrontPageActivity extends AppCompatActivity {
 
-    Button btn1, btn2, btn3, btn4;
+    Button btn1, btn2, btn3, btn4, btn5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class FrontPageActivity extends AppCompatActivity {
         btn2 = findViewById(R.id.btn2);
         btn3 = findViewById(R.id.btn3);
         btn4 = findViewById(R.id.btn4);
+        btn5 = findViewById(R.id.btn5);
 
         // Setting click listeners for each button
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -51,6 +52,14 @@ public class FrontPageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), listView.class);
+                startActivity(intent);
+            }
+        });
+
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ExpandableListViewActivity.class);
                 startActivity(intent);
             }
         });
