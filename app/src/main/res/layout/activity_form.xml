@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <!-- Input Layout -->
+        <LinearLayout
+            android:id="@+id/inputlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/card_background"
+            android:elevation="6dp"
+            android:layout_marginTop="30dp"
+            android:visibility="visible">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Registration"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Name Field -->
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Name"
+                android:textSize="16sp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/input_field_background"
+                android:layout_marginBottom="15dp" />
+
+            <!-- ID Field -->
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="ID"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/input_field_background"
+                android:layout_marginBottom="15dp" />
+
+            <!-- Email Field -->
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textSize="16sp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/input_field_background"
+                android:layout_marginBottom="15dp" />
+
+            <!-- Mobile Field -->
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:textSize="16sp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/input_field_background"
+                android:layout_marginBottom="15dp" />
+
+            <!-- Password Field -->
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="16sp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/input_field_background"
+                android:layout_marginBottom="15dp" />
+
+            <!-- Spinner (Dropdown) -->
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/spinner_background" />
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Submit"
+                android:background="@drawable/submit_button_background"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:elevation="5dp" />
+        </LinearLayout>
+
+        <!-- Output Layout -->
+        <LinearLayout
+            android:id="@+id/outputlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/card_background"
+            android:elevation="6dp"
+            android:layout_marginTop="30dp"
+            android:visibility="gone">
+
+            <!-- Output Text -->
+            <TextView
+                android:id="@+id/outputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="15dp"
+                android:background="@drawable/output_field_background"
+                android:textColor="#333333"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Go Back Button -->
+            <Button
+                android:id="@+id/go_back_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Go Back"
+                android:background="#FF5722"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:elevation="5dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
