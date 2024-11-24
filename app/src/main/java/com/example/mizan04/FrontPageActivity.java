@@ -50,7 +50,8 @@ public class FrontPageActivity extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(FrontPageActivity.this, "Button 4 clicked", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), listView.class);
+                startActivity(intent);
             }
         });
     }
