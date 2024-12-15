@@ -13,6 +13,27 @@
         android:theme="@style/Theme.Mizan04"
         tools:targetApi="31">
         <activity
+            android:name="com.example.recyclerView.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.recyclerView.item_view"
+            android:exported="false" />
+        <activity
+            android:name="com.example.recyclerView.recycler_view"
+            android:exported="false" />
+        <activity
+            android:name="com.example.recyclerView.recycler_description"
+            android:exported="false" />
+        <activity
+            android:name="com.example.recyclerView.recyclerView"
+            android:exported="false" />
+        <activity
+            android:name=".recycler_view"
+            android:exported="false" />
+        <activity
+            android:name=".recycler_description"
+            android:exported="false" />
+        <activity
             android:name=".Form"
             android:exported="false" />
         <activity
